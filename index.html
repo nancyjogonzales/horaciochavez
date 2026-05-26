@@ -762,12 +762,34 @@
   <h2 class="section-title reveal">Contact Horacio</h2>
   <p class="contact-intro reveal">For inquiries about readings, speaking engagements, or just to share your thoughts on the book.</p>
 
-  <div class="contact-grid reveal reveal-delay-1">
+  <div class="contact-grid reveal reveal-delay-1" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); max-width:800px;">
     <a href="https://www.amazon.com/That-Which-Dwells-N%C3%ADh%C3%ADni%C3%A1-Awakening/dp/B0GZBBNWW8"
        target="_blank" rel="noopener" class="contact-card">
       <div class="contact-card-icon">📖</div>
       <div class="contact-card-label">Order the Book</div>
       <div class="contact-card-value">Available on Amazon in print &amp; Kindle</div>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61589327020586" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="var(--warm-gold)">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+      </div>
+      <div class="contact-card-label">Facebook</div>
+      <div class="contact-card-value">Follow Horacio's author page</div>
+    </a>
+
+    <a href="https://www.instagram.com/zossima51/" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1.2" fill="var(--warm-gold)" stroke="none"/>
+        </svg>
+      </div>
+      <div class="contact-card-label">Instagram</div>
+      <div class="contact-card-value">Follow @zossima51</div>
     </a>
 
   </div>
@@ -816,15 +838,7 @@
     });
   });
 
-  // Contact form submit (static - just UX)
-  document.querySelector('.form-submit').addEventListener('click', function() {
-    const name = document.querySelector('input[placeholder="Full name"]').value;
-    if (name.trim()) {
-      this.textContent = '✦ Message Sent — Thank You ✦';
-      this.style.background = 'var(--sunset-gold)';
-      this.style.color = 'var(--deep-night)';
-    }
-  });
+
 </script>
 
 </body>
