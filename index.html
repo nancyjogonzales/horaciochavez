@@ -617,6 +617,78 @@
     margin: 1rem 0 2.5rem;
   }
 
+
+  /* ─── SUPPORT LOCAL BADGE ─── */
+  .support-local-badge {
+    margin-top: 1.2rem;
+    padding: 1.2rem 1.4rem;
+    border: 1px solid rgba(212, 165, 71, 0.35);
+    background: linear-gradient(135deg, rgba(122, 46, 24, 0.25), rgba(196, 98, 45, 0.1));
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .support-local-badge::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--sunset-gold), transparent);
+  }
+
+  .support-local-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .support-local-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(212, 165, 71, 0.1);
+    border: 1px solid rgba(212, 165, 71, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .support-local-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .support-local-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--warm-gold);
+  }
+
+  .support-local-sub {
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mesa-tan);
+    opacity: 0.8;
+  }
+
+  .support-local-note {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.6;
+    border-top: 1px solid rgba(212, 165, 71, 0.15);
+    padding-top: 0.8rem;
+    margin: 0;
+  }
+
   /* ─── RESPONSIVE ─── */
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
@@ -701,6 +773,23 @@
          class="book-amazon-btn">
         ✦ Order on Amazon ✦
       </a>
+
+      <!-- SUPPORT LOCAL BANNER -->
+      <div class="support-local-badge">
+        <div class="support-local-inner">
+          <div class="support-local-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <div class="support-local-text">
+            <span class="support-local-title">Support Local ✦ New Mexico</span>
+            <span class="support-local-sub">Ask for this book at your local bookstore</span>
+          </div>
+        </div>
+        <p class="support-local-note">If you have a favorite independent bookstore, ask them to carry <em>That Which Dwells</em>. Every local sale keeps New Mexico stories alive.</p>
+      </div>
     </div>
 
     <div class="book-info reveal reveal-delay-1">
